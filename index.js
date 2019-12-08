@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 
 const app = express();
-app.set('port', process.env.PORT || 80);
+app.set('port', process.env.PORT || 5000);
 app.set('view engine', 'ejs');
 app.use('/public', express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
